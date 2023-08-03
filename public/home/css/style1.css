@@ -1,0 +1,137 @@
+
+
+.contact-box{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.contact__address h5 {
+    position:relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+	color: #111111;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	/* margin-bottom: 20px; */
+}
+
+.contact__address ul li {
+	list-style: none;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.contact__address ul li:last-child {
+	margin-bottom: 0;
+}
+
+.contact__address ul li h6 {
+	color: #111111;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.contact__address ul li h6 i {
+	font-size: 16px;
+	color: #ca1515;
+	margin-right: 5px;
+}
+
+.contact__address ul li p {
+	margin-bottom: 0;
+	font-size: 15px;
+	color: #444444;
+}
+
+.contact__address ul li span {
+	font-size: 15px;
+	color: #444444;
+	display: inline-block;
+	margin-right: 25px;
+	position: relative;
+}
+
+.contact__address ul li span:after {
+	position: absolute;
+	right: -15px;
+	top: 11px;
+	content: "|";
+	line-height: 0;
+}
+
+.contact__address ul li span:last-child {
+	margin-right: 0;
+}
+
+.contact__address ul li span:last-child:after {
+	display: none;
+}
+.right{
+    padding: 25px 40px;
+}
+h2{
+    position:relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+h2:after{
+    content:'';
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1 rem;
+    outline:none;
+    border:2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size:1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+.field:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.area{
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #27ae60;
+}
+@media screen and (max-width:880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+}
+   
